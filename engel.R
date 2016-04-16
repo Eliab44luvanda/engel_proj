@@ -1,4 +1,7 @@
 
 rm(list = ls())
 setwd("~/engel_proj")
-load("consaggr.rdata")
+library(haven)
+real_consaggr <- read_sav("real_consaggr.sav")
+View(real_consaggr)
+head(real_consaggr)
